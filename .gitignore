@@ -1,0 +1,52 @@
+# ==========================================
+# CONFIGURACIÓN GLOBAL MONOREPO NOVO
+# ==========================================
+
+### IDEs (IntelliJ, VS Code, STS) ###
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.env
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+/nbproject/private/
+/nbbuild/
+/.nb-gradle/
+
+### BACKEND (Spring Boot) ###
+**/target/
+**/.mvn/wrapper/maven-wrapper.jar
+**/build/
+HELP.md
+# Permitir carpetas target o build dentro de src si fuera necesario (opcional)
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### FRONTEND (Angular) ###
+**/node_modules/
+**/.angular/
+**/dist/
+**/tmp/
+**/out-tsc/
+**/.editorconfig
+**/.pnp.*
+
+### SISTEMA Y LOGS ###
+logs/
+*.log
+*.log.*
+*.log.gz
+*.log.zip
+.DS_Store
+Thumbs.db
+
+### ESPECÍFICO DEL NEGOCIO (NOVO) ###
+/uploads/
+**/application-local.properties
